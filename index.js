@@ -3,6 +3,7 @@ let timerId;
 
 const startButton = document.getElementById("start");
 startButton.addEventListener('click', function () {
+    clearInterval(timerId);
     timerId = setInterval(updateClock, 1000);
 });
 
